@@ -238,6 +238,10 @@ button {
     background-size: cover;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .boton:hover {
     display: flex;
     justify-content: center;
@@ -246,6 +250,7 @@ button {
     height: 6rem;
     margin: 1rem;
     border: none;
+    cursor: pointer;
     border-radius: 999px;
     background: rgb(255,253,207);
     background: radial-gradient(circle, rgba(255,253,207,1) 0%, rgba(255,255,255,0) 72%);
