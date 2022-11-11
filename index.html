@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/login.css" rel="stylesheet"/>
+    <link rel="icon" type="image" sizes="100%" href="/cajero-automatico/resources/firmare.png">
+    <title>Ingresa a tu Cuenta</title>
+</head>
+<body>
+    <header>
+        <div id="logo_banco">
+            <img src="./resources/logorebanco.svg" alt="logo REbanco">
+            <h1>
+                REbanco
+            </h1>
+        </div>
+    </header>
+    <main>
+        <strong id="error_login" class="alert hidden"></strong>
+        <form id="formularioLogin">
+            <input placeholder="Ingresa tu Usuario" type="email" name="email" id="correoUsuario">
+            <input placeholder="Ingresa tu contraseña" type="password" name="password" id="contrasenaUsuario">
+            <button id="submit">
+                Ingresar
+            </button>
+        </form>
+    </main>
+    <footer id="contacto">
+        <div id="telefono">
+            <h6>Si no contesto no estoy</h6>
+            <h5>7777777</h5>
+        </div>
+        <div id="msg_texto">
+            <h6>Intenta con un mensaje</h6>
+            <h5>666</h5>
+        </div>
+    </footer>
+    <script src="./login.js" defer type="module"></script>
+</body>
+</html>
