@@ -88,11 +88,13 @@ button:hover {
  }
   
 .alert-danger {
-    background-color: #f8d7da;  
+    background: rgb(236,117,117);
+    background: linear-gradient(90deg, rgba(236,117,117,1) 0%, rgba(232,201,168,1) 100%);    
     color: #842029;
 }
   
 .alert-info {
-    background-color: #087fee;  
+    background: rgb(117,162,236);
+    background: linear-gradient(90deg, rgba(117,162,236,1) 0%, rgba(168,232,209,1) 100%);    
     color: white;
 }
