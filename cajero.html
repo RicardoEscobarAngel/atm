@@ -27,7 +27,7 @@
         </div> 
     </header>
     <div id="barra_bienvenida">
-        <h2>¡Bienvenido, quienseas!</h2>
+        <h2 id="saludo_bienvenida">¡Bienvenido, quienseas!</h2>
         <h5>Estoy listo para tomar tu dinero</h5>
     </div>
     <main>
@@ -102,6 +102,17 @@
             <h5>666</h5>
         </div>
     </footer>
-    <script src="./main.js" defer type="module"></script>
+
+    <div id="modal" class="hidden">      
+        <span>x</span>
+        <h5>Modal</h5>
+        <div>
+          CONTENIDO DEL MODAL        
+        </div>
+    </div>
+
+    <div id="backdrop" class="hidden"></div>
+
+    <script src="./cajero.js" type="module"></script>
 </body>
 </html>

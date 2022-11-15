@@ -3,25 +3,25 @@ const usuariosCajero = [
         nombre: 'Ricardo Escobar',
         correo: 'rescobar@rebanco.com',
         contrasena: '123456',
-        saldo: 1000
+        balance: 1000
     },
     {
         nombre: 'Santiago González',
         correo: 'sgonzalez@rebanco.com',
         contrasena: '123456',
-        saldo: 2000
+        balance: 2000
     },
     {
         nombre: 'Jorge Escobar',
         correo: 'jescobar@rebanco.com',
         contrasena: '123456',
-        saldo: 3000
+        balance: 3000
     },
     {
         nombre: 'Camilo Noguera',
         correo: 'cnoguera@rebanco.com',
         contrasena: '123456',
-        saldo: 4000
+        balance: 4000
     }
 ]
 const error = document.querySelector('#error_login')

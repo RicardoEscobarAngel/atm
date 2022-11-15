@@ -58,6 +58,17 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
+.error {
+    font-weight: 700;
+    color: red;
+    padding: 4px;
+    font-size: 20px;
+}
+
 html {
     height: 100%;
     width: 100%;
@@ -330,4 +341,80 @@ footer div h5 {
 
 footer div h6 {
     font-weight: 500;
+}
+
+#backdrop{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(30deg, rgba(255,207,207,0.9) 0%, rgba(170,219,255,0.9) 100%);
+    z-index: 10;
+}
+
+#modal {
+    position: fixed;
+    min-width: 500px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    background: rgb(80,123,170);
+    background: linear-gradient(90deg, rgb(198, 225, 255) 0%, rgb(175, 201, 221) 100%);    display: flex;
+    padding: 1rem;
+    border-radius: 1rem;
+    z-index: 100;
+    color: black;
+    text-align: center;
+}
+  
+#modal div {  
+    display: flex;
+    flex-direction: column;  
+    height: 100%;
+}
+  
+#modal h5 {
+    margin-bottom: 30px;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 900;  
+}
+  
+#modal span {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    background-color: #fbd301;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+  
+  
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+  
+  
+#modal span:hover {
+    filter: brightness(1.1);
+}
+  
+#modal span:active {
+    filter: brightness(0.9);
+}
+  
+#modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    
 }
