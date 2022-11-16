@@ -91,7 +91,7 @@ body {
 
 header {
     height: 2rem;
-    width: 90%;
+    width: 100%;
     margin-top: 0.5rem;
     margin-bottom: 5rem;
     display: flex;
@@ -109,6 +109,7 @@ header {
 
 #fecha_clima {
     display: flex;
+    margin-right: 0.5rem;
 }
 
 #fecha_temperatura {
