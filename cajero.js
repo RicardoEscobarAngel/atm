@@ -32,8 +32,6 @@ document.addEventListener("DOMContentLoaded", function(){
     saludo.innerHTML = `¡Bienvenido, ${usuarioActual.nombre}!`
 })
 
-// Revisar con el sensei porque da valor 'undefined'
-
 const consultaBalance = document.querySelector("#balance")
 consultaBalance.addEventListener("click", function(){
     abrirModal()
@@ -58,7 +56,21 @@ botonDeposito.addEventListener("click", function (){
     <form style= "height: 40vh; width: 60vw; display: flex; flex-direction: column; justify-content: center; align-items: center">
       <input id="nuevoDeposito" style= "width: 40vw; height: 2rem; text-align: center; border: none; border-radius: 999px" placeholder="¿Cuánto me vas a entregar?" type="number"/>
       <button id="confirmasDeposito" class="boton" >dámelo</button>    
-    </form>
-   `
-   tituloModal.innerHTML = 'Deposito a cuenta'
+    </form>`
+    tituloModal.innerHTML = 'Regálame tu plata:'
+
+    const usuarioActual = JSON.parse(window.sessionStorage.getItem("usuarioActual"))
+    const balanceActual = Number(usuarioActual.balance)
+
+    const nuevoDeposito = document.querySelector("nuevoDeposito")
+    const hacerDeposito = document.querySelector("hacerDeposito")
+
+    hacerDeposito.addEventListener("click", function(){
+        const actualizarUsuarioActual = {
+            ...usuarioActual,
+            balance: balanceActual + Number(nuevoDeposito.value),
+        }
+        window.sessionStorage.setItem("usuarioActual", JSON.stringify(actualizarUsuarioActual))
+        cerrarModal()
+    })
 })
